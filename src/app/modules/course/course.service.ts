@@ -1,10 +1,11 @@
 import mongoose from 'mongoose';
 import AppError from '../../errors/appError';
-import { queryFunction } from '../../helpers/queryFunction';
+
 import { TCourse } from './course.interface';
 import { Course } from './course.model';
 import { JwtPayload } from 'jsonwebtoken';
 import { Category } from '../category/category.model';
+import { queryFunction } from '../../helpers/queryFuncion';
 
 // create a course
 const createCourse = async (payload: TCourse, courseCreator: JwtPayload) => {
